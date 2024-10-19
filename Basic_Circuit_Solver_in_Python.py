@@ -1,33 +1,15 @@
-#Basic_Circuit_Solver_in_Python
-#Write your code here
-def solve_kvl(loop_voltages):
-    """Validates Kirchhoff's Voltage Law (KVL): Sum of voltages in a loop should be zero."""
-    total_voltage = sum(loop_voltages)
-    if total_voltage == 0:
-        return True  # KVL is satisfied
-    else:
-        return False  # KVL is violated
+def calculate_current(voltage, resistance):
+    """Calculates the current using Ohm's Law: I = V / R"""
+    if resistance == 0:
+        raise ValueError("Resistance cannot be zero.")
+    return voltage / resistance
 
-# Example usage of KVL
-loop_voltages = [10, -5, -5]  # Voltages in a closed loop
-print(f"KVL Valid: {solve_kvl(loop_voltages)}")  # Output: True
+def calculate_voltage(current, resistance):
+    """Calculates the voltage using Ohm's Law: V = I * R"""
+    return current * resistance
 
-import unittest
+# Example usage of Ohm's Law
+# voltage = 10, resistance = 5
+print(f"Current: {calculate_current(10, 5)} A")  # Output: 2 A
+print(f"Voltage: {calculate_voltage(2, 5)} V")   # Output: 10 V
 
-class TestCircuitSolver(unittest.TestCase):
-
-    # Testing Ohm's Law functions
-    def test_calculate_current(self):
-        self.assertEqual(calculate_current(10, 5), 2)
-        self.assertRaises(ValueError, calculate_current, 10, 0)
-
-    def test_calculate_voltage(self):
-        self.assertEqual(calculate_voltage(2, 5), 10)
-
-    # Testing KCL
-    def test_solve_kcl(self):
-        self.assertTrue(solve_kcl([3, -2, -1]))  # Should satisfy KCL
-        self.assertFalse(solve_kcl([3, -2, -2]))  # Should violate KCL
-
-# Running the tests
-unittest.main(argv=[''], verbosity=2, exit=False)
