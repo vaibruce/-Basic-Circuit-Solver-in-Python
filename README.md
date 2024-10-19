@@ -16,7 +16,7 @@ This Python command-line tool solves simple DC circuits using **Ohm’s Law**, *
 2. Run the program in any Python environment.
 3. Use the unit tests to validate the correctness of each function.
 
-## Downlonding the code
+## Downloading the code 
 Clone the repository and install the dependencies:
 
 ```bash
