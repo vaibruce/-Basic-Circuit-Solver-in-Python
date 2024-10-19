@@ -40,7 +40,7 @@ def solve_kvl(loop_voltages):
 loop_voltages = [10, -5, -5]  # Voltages in a closed loop
 print(f"KVL Valid: {solve_kvl(loop_voltages)}")  # Output: True
 
-
+#this below code test the above ohms and kcl 
 import unittest
 
 class TestCircuitSolver(unittest.TestCase):
