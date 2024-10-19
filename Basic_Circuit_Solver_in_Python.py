@@ -12,6 +12,20 @@ def solve_kvl(loop_voltages):
 loop_voltages = [10, -5, -5]  # Voltages in a closed loop
 print(f"KVL Valid: {solve_kvl(loop_voltages)}")  # Output: True
 
+def solve_kcl(node_currents):
+    """Validates Kirchhoff's Current Law (KCL): Sum of currents at a node should be zero."""
+    total_current = sum(node_currents)
+    if total_current == 0:
+        return True  # KCL is satisfied
+    else:
+        return False  # KCL is violated
+        return False  # KVL is violated
+
+# Example usage of KVL
+loop_voltages = [10, -5, -5]  # Voltages in a closed loop
+print(f"KVL Valid: {solve_kvl(loop_voltages)}")  # Output: True
+
+
 import unittest
 
 class TestCircuitSolver(unittest.TestCase):
@@ -31,3 +45,4 @@ class TestCircuitSolver(unittest.TestCase):
 
 # Running the tests
 unittest.main(argv=[''], verbosity=2, exit=False)
+
