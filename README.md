@@ -26,12 +26,17 @@ This Python command-line tool solves simple DC circuits using **Ohm’s Law**, *
 - Python 3.x
 - `numpy` for solving linear equations.
 
-## Installation
+### How to Run the Code
+1. Install Python (if not already installed).
+2. Run the program in any Python environment.
+3. Use the unit tests to validate the correctness of each function.
+
+## Downlonding the code
 Clone the repository and install the dependencies:
 
 ```bash
 git clone https://github.com/vaibruce/Basic-Circuit-Solver-in-Python.git
-cd Basic-Circuit-Solver-in-Python
+cd Basic-Circuit-Solver-in-Python   
 
 
 >>>>>>> 1ebca41dcd8258c62775c0798856b6571ef86614
