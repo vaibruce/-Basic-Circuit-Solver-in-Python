@@ -21,5 +21,5 @@ Clone the repository and install the dependencies:
 ```bash
 git clone https://github.com/vaibruce/Basic-Circuit-Solver-in-Python.git
 cd Basic-Circuit-Solver-in-Python
-pip install -r requirements.txt
+
 
