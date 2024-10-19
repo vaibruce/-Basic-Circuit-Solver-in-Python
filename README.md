@@ -1,8 +1,4 @@
 # Basic-Circuit-Solver-in-Python
-A Python program to solve simple DC circuits using Ohm’s law and Kirchhoff’s laws.
-
-# DC Circuit Solver
-
 ## Overview
 This Python command-line tool solves simple DC circuits using **Ohm’s Law**, **Kirchhoff’s Current Law (KCL)**, and **Kirchhoff’s Voltage Law (KVL)**. The program calculates the current through each branch and voltage drops across each resistor.
 
@@ -15,11 +11,15 @@ This Python command-line tool solves simple DC circuits using **Ohm’s Law**, *
 - Python 3.x
 - `numpy` for solving linear equations.
 
-## Installation
+### How to Run the Code
+1. Install Python (if not already installed).
+2. Run the program in any Python environment.
+3. Use the unit tests to validate the correctness of each function.
+
+## Downlonding the code
 Clone the repository and install the dependencies:
 
 ```bash
 git clone https://github.com/vaibruce/Basic-Circuit-Solver-in-Python.git
-cd Basic-Circuit-Solver-in-Python
-
+cd Basic-Circuit-Solver-in-Python   
 
